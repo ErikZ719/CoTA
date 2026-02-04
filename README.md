@@ -18,6 +18,19 @@ python generate_demo.py
 ```
 
 
+### The motivation of this paper is
+![image](https://github.com/ErikZ719/CoTA/blob/main/images/motivation.png)
+
+### The patterns of repeat tokens under kv-cache are as follows:
+![image](https://github.com/ErikZ719/CoTA/blob/main/images/mamda-cache.png)
+
+### The layer wise of LLaDA-V e are as follows:
+![image](https://github.com/ErikZ719/CoTA/blob/main/images/layer-wise.png)
+
+### After CoTA, repeat tokens became normal tokens, and the attention map are:
+![image](https://github.com/ErikZ719/CoTA/blob/main/images/llada-cota.png)
+
+
 ## Citation
 ```bibtex
 @inproceedings{zhao2026context,
