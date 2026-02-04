@@ -5,7 +5,7 @@
 
 > **[Context Tokens are Anchors: Understanding the Repeat Curse in dMLLMs from an Information Flow Perspective](https://arxiv.org/abs/2601.20520)**<br>
 > ICLR 2026<br>
-> Qiyan Zhao, Xiaofeng Zhang, Shuochen Chang, Qianyu Chen, Xiaosong Yuan, Xuhang Chen, Luoqi Liu, Jiajun Zhang, Xu-Yao Zhang, Da-Han Wang<br>
+> Qiyan Zhao, Xiaofeng Zhang*, Shuochen Chang, Qianyu Chen, Xiaosong Yuan, Xuhang Chen, Luoqi Liu, Jiajun Zhang, Xu-Yao Zhang, Da-Han Wang<br>
 
 
 
