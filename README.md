@@ -1,6 +1,6 @@
 # Context Tokens are Anchors: Understanding the Repeat Curse in dMLLMs from an Information Flow Perspective
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2410.15926-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.20520) <a href="https://huggingface.co/papers/2410.15926"></a> 
+[![arXiv](https://img.shields.io/badge/Arxiv-2410.15926-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.20520) <a href="https://arxiv.org/abs/2601.20520"></a> 
 
 
 > **[Context Tokens are Anchors: Understanding the Repeat Curse in dMLLMs from an Information Flow Perspective](https://arxiv.org/abs/2601.20520)**<br>
