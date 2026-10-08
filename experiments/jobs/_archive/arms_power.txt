@@ -1,0 +1,6 @@
+# Extend the two E_s=49 arms to n=160 (images 48-159) so their quality judging can run
+# at the same power as DAR / DAR+CTAR once the judge gateway is back.
+ctarsh_p0  bs/es49_dar_ctarsh_p0  512 56 48  --cache_gi 49 --dar_r 4 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 7
+ctarsh_p1  bs/es49_dar_ctarsh_p1  512 56 104 --cache_gi 49 --dar_r 4 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 7
+darw3_p0   bs/es49_darw3_p0       512 56 48  --cache_gi 49 --dar_r 4 --dar_w 3
+darw3_p1   bs/es49_darw3_p1       512 56 104 --cache_gi 49 --dar_r 4 --dar_w 3

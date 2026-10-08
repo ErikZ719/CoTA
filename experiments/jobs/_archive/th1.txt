@@ -1,0 +1,10 @@
+# (a) does the staleness trigger keep its edge on top of DAR across the stress grid?
+th1_both_es7   th1/both_es7   512 48 0 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+th1_both_es21  th1/both_es21  512 48 0 --cache_gi 21 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+th1_both_es49  th1/both_es49  512 48 0 --cache_gi 49 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+th1_both_a10   th1/both_a10   512 48 0 --cache_tr 0.10 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+# (b) power: theta=1 vs plain CTAR on 112 unseen images (n=160 total when pooled with 0-47)
+th1_p0   th1/th1_p0   512 56 48  --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+th1_p1   th1/th1_p1   512 56 104 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+ctar_p0  th1/ctar_p0  512 56 48  --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+ctar_p1  th1/ctar_p1  512 56 104 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31

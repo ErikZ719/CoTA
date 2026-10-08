@@ -1,0 +1,11 @@
+# CTAR band relocation (user decision 2026-09-15): shallow L1-8 (code 0-7) and all layers (0-31),
+# standalone and on top of DAR, at the default budget and under E_s=49. L=512, n=48, offset 0.
+es7_dar_ctarsh        bs/es7_dar_ctarsh        512 48 0 --dar_r 4 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 7
+es7_dar_ctarall       bs/es7_dar_ctarall       512 48 0 --dar_r 4 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 31
+es7_dar_ctarall_th1   bs/es7_dar_ctarall_th1   512 48 0 --dar_r 4 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 31 --ctar_theta 1
+es7_ctarsh            bs/es7_ctarsh            512 48 0 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 7
+es7_ctarall           bs/es7_ctarall           512 48 0 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 31
+es49_dar_ctarall      bs/es49_dar_ctarall      512 48 0 --cache_gi 49 --dar_r 4 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 31
+es49_dar_ctarall_th1  bs/es49_dar_ctarall_th1  512 48 0 --cache_gi 49 --dar_r 4 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 31 --ctar_theta 1
+es49_ctarsh           bs/es49_ctarsh           512 48 0 --cache_gi 49 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 7
+es49_ctarall          bs/es49_ctarall          512 48 0 --cache_gi 49 --ctae_mode reroute_q --stitch_lo 0 --stitch_hi 31

@@ -1,0 +1,8 @@
+dataset_path: parquet
+dataset_kwargs:
+  data_files:
+    validation: /data/zhaoqiyan/autodl-tmp/datasets/DocVQA/DocVQA/validation-*.parquet
+output_type: generate_until
+doc_to_visual: !function utils.docvqa_doc_to_visual
+doc_to_text: !function utils.docvqa_doc_to_text
+doc_to_target: "answers"

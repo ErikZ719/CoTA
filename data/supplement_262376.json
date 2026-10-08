@@ -1,0 +1,8 @@
+{
+ "seed": "supplement",
+ "n": 1,
+ "src": "/data/zhaoqiyan/autodl-tmp/coco2014/val2014",
+ "files": [
+  "COCO_val2014_000000262376.jpg"
+ ]
+}

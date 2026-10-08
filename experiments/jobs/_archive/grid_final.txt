@@ -1,0 +1,28 @@
+# Final-form grid (CTAR with monitor theta=1, band L25-32 = code 24-31). 2026-09-17.
+# L=512 arms missing from the 2^3 grid, same 48 images (offset 0), three shards of 16.
+ctev_o0          gf/ctev_o0          512 16 0  --ctev_mode ctx --ctev_lambda 0.25
+ctev_o16         gf/ctev_o16         512 16 16 --ctev_mode ctx --ctev_lambda 0.25
+ctev_o32         gf/ctev_o32         512 16 32 --ctev_mode ctx --ctev_lambda 0.25
+ctarth_ctev_o0   gf/ctarth_ctev_o0   512 16 0  --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25
+ctarth_ctev_o16  gf/ctarth_ctev_o16  512 16 16 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25
+ctarth_ctev_o32  gf/ctarth_ctev_o32  512 16 32 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25
+fullth_o0        gf/fullth_o0        512 16 0  --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25
+fullth_o16       gf/fullth_o16       512 16 16 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25
+fullth_o32       gf/fullth_o32       512 16 32 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25
+# L=128, the n=200 slice (offset 60..259) used by fin/ and darfin/, two shards of 100.
+l128_off_a         gf128/off_a         128 100 60  
+l128_off_b         gf128/off_b         128 100 160 
+l128_van_a         gf128/van_a         128 100 60  --mode_override baseline
+l128_van_b         gf128/van_b         128 100 160 --mode_override baseline
+l128_ctarth_a      gf128/ctarth_a      128 100 60  --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+l128_ctarth_b      gf128/ctarth_b      128 100 160 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+l128_ctev_a        gf128/ctev_a        128 100 60  --ctev_mode ctx --ctev_lambda 0.25
+l128_ctev_b        gf128/ctev_b        128 100 160 --ctev_mode ctx --ctev_lambda 0.25
+l128_dar_ctarth_a  gf128/dar_ctarth_a  128 100 60  --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+l128_dar_ctarth_b  gf128/dar_ctarth_b  128 100 160 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+l128_dar_ctev_a    gf128/dar_ctev_a    128 100 60  --dar_r 4 --ctev_mode ctx --ctev_lambda 0.25
+l128_dar_ctev_b    gf128/dar_ctev_b    128 100 160 --dar_r 4 --ctev_mode ctx --ctev_lambda 0.25
+l128_ctarth_ctev_a gf128/ctarth_ctev_a 128 100 60  --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25
+l128_ctarth_ctev_b gf128/ctarth_ctev_b 128 100 160 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25
+l128_fullth_a      gf128/fullth_a      128 100 60  --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25
+l128_fullth_b      gf128/fullth_b      128 100 160 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31 --ctev_mode ctx --ctev_lambda 0.25

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.orig
+*.upstream
+.DS_Store
+.ipynb_checkpoints/
+_build/

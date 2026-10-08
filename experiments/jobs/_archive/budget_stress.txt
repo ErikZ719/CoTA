@@ -1,0 +1,16 @@
+# Budget-stress grid, L=512, same 48 images as the default-budget cells.
+# Axis 1: E_s (how long a skipped position keeps frozen routing) -- F1's dose-response
+#         law predicts this is where CTAR should matter most.
+# Axis 2: alpha (how many positions get fresh state per step) -- DAR's slot pool.
+es21_off   bs/es21_off   512 48 0 --cache_gi 21
+es21_dar   bs/es21_dar   512 48 0 --cache_gi 21 --dar_r 4
+es21_ctar  bs/es21_ctar  512 48 0 --cache_gi 21 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+es21_both  bs/es21_both  512 48 0 --cache_gi 21 --dar_r 4 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+es49_off   bs/es49_off   512 48 0 --cache_gi 49
+es49_dar   bs/es49_dar   512 48 0 --cache_gi 49 --dar_r 4
+es49_ctar  bs/es49_ctar  512 48 0 --cache_gi 49 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+es49_both  bs/es49_both  512 48 0 --cache_gi 49 --dar_r 4 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+a10_off    bs/a10_off    512 48 0 --cache_tr 0.10
+a10_dar    bs/a10_dar    512 48 0 --cache_tr 0.10 --dar_r 4
+a10_ctar   bs/a10_ctar   512 48 0 --cache_tr 0.10 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+a10_both   bs/a10_both   512 48 0 --cache_tr 0.10 --dar_r 4 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31

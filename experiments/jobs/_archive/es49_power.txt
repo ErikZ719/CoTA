@@ -1,0 +1,8 @@
+# Power for the E_s=49 question: images 48-159 (never used for selection), pooled with 0-47 -> n=160.
+es49_dar_p0      bs/es49_dar_p0      512 56 48  --cache_gi 49 --dar_r 4
+es49_dar_p1      bs/es49_dar_p1      512 56 104 --cache_gi 49 --dar_r 4
+es49_both_p0     bs/es49_both_p0     512 56 48  --cache_gi 49 --dar_r 4 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+es49_both_p1     bs/es49_both_p1     512 56 104 --cache_gi 49 --dar_r 4 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+es49_bth1_s0     bs/es49_both_th1    512 48 0   --cache_gi 49 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+es49_bth1_p0     bs/es49_both_th1_p0 512 56 48  --cache_gi 49 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
+es49_bth1_p1     bs/es49_both_th1_p1 512 56 104 --cache_gi 49 --dar_r 4 --ctar_theta 1 --ctae_mode reroute_q --stitch_lo 24 --stitch_hi 31
